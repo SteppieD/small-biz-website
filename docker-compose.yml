@@ -1,0 +1,26 @@
+# Docker Compose configuration for Small Business WordPress Template
+# Will be populated in next phase
+
+version: '3.8'
+
+services:
+  # MySQL Database
+  db:
+    image: mysql:8.0
+    # Configuration to be added
+
+  # WordPress
+  wordpress:
+    image: wordpress:latest
+    # Configuration to be added
+
+  # phpMyAdmin (Optional)
+  phpmyadmin:
+    image: phpmyadmin:latest
+    # Configuration to be added
+
+volumes:
+  # Volume definitions to be added
+
+networks:
+  # Network definitions to be added

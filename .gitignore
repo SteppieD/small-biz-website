@@ -1,0 +1,103 @@
+# WordPress Core Files
+# Core files are managed via Docker, not committed to repository
+wp-admin/
+wp-includes/
+*.php
+!wp-config.php
+!business-config.example.php
+
+# Allow specific directories
+!wp-content/
+
+# Within wp-content, ignore uploads and certain plugins
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/backups/
+
+# Plugins installed via Composer (managed automatically)
+wp-content/plugins/contact-form-7/
+wp-content/plugins/wordpress-seo/
+wp-content/plugins/woocommerce/
+wp-content/plugins/wordfence/
+wp-content/plugins/akismet/
+
+# Environment and Configuration
+.env
+.env.local
+.env.production
+business-config.php
+wp-config-local.php
+
+# Node/NPM
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Composer
+/vendor/
+
+# Build artifacts
+*.log
+*.sql
+*.sqlite
+*.cache
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+*.tmproj
+*.code-workspace
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Docker volumes (data persists outside repo)
+docker-data/
+mysql-data/
+
+# Logs
+*.log
+logs/
+error_log
+access_log
+
+# Testing
+phpunit.xml
+.phpunit.result.cache
+tests/_output/*
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Security
+.htaccess.bak
+ssh-keys/
+*.pem
+*.key
+*.cert
