@@ -50,10 +50,23 @@ Comprehensive documentation is available in the `/docs` directory:
 
 - [Setup Guide](docs/SETUP-GUIDE.md)
 - [Customization Guide](docs/CUSTOMIZATION-GUIDE.md)
+- **[Image Management Guide](docs/IMAGE-MANAGEMENT.md)** - How to change website images
 - [SEO Guide](docs/SEO-GUIDE.md)
 - [Business Types Guide](docs/BUSINESS-TYPES.md)
 - [Deployment Guide](docs/DEPLOYMENT-GUIDE.md)
 - [Claude Code Agents Guide](docs/AGENTS-GUIDE.md)
+
+### Quick Reference: Changing Images
+
+The easiest customization is changing website images:
+
+1. Upload photos to WordPress Media Library
+2. Copy the image URL
+3. Edit `wp-content/themes/small-business-pro/index.php`
+4. Replace image URLs (clearly marked with comments)
+5. Upload the updated file
+
+See [Image Management Guide](docs/IMAGE-MANAGEMENT.md) for complete instructions.
 
 ## Project Structure
 
